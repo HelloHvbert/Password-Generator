@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/lock.png">
+</head>
+<body>
+    <div id="container">
+        <div id="label">
+            Password Generator
+        </div>
+        <div id="display">
+            
+        </div>
+        <div id="options">
+            <div class="option">
+                <label for="small_letters">
+                    <input id='small_letters' class="check" type='checkbox' checked>
+                    Small letters
+                </label>
+            </div>
+            
+            <div class="option">               
+                <label for="capital_letters">
+                    <input id='capital_letters' class="check" type='checkbox'>
+                    Capital letters
+                </label>
+            </div>
+
+            <div class="option">
+                
+                <label for="numbers"> 
+                    <input id='numbers' class="check" type='checkbox'>
+                    Numbers
+                </label>
+            </div>
+        </div>
+        <div id="length-slide">
+            <label for="slider">Password length:</label>           
+            <input type="range" name="slider" id="slider" min="10" max="22" value="8">
+            <span id="sliderValue"> 10 </span>
+        </div>
+        <button type="submit">Generate</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
